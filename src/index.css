@@ -1,0 +1,12 @@
+body {
+  font-family: var(--font-karla);
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: 0;
+    word-wrap: break-word;
+    font-weight: 400;
+    background-color: #fff;
+    color: var(--main-color);
+    overflow-x: hidden;
+}
+
