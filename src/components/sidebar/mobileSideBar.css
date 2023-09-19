@@ -3,7 +3,7 @@
     padding: 0;
 }
 .navbar{
-    background-color: rgb(193, 195, 197);
+    background-color: #fff;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -20,7 +20,8 @@
     height: 100vh;
     display: flex;
     transition: 850ms;
-    background-color: rgb(193, 195, 197);    
+    background-color: #fff; 
+    
     top: 0;
     right: -200px;
     transition: right 2s ease-in-out; /* Smooth transition */
