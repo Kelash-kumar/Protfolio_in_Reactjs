@@ -1,0 +1,351 @@
+.kelash_tm_about {
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+  /* overflow-y: hidden; */
+  overflow-x: hidden;
+}
+.about_tm_main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 70px;
+  margin-left: 270px;
+  background-color: #fff;
+}
+.kelash_tm_biography {
+  width: 100%;
+  height: 100%;
+  float: left;
+  display: flex;
+  padding: 20px;
+}
+
+.kelash_tm_biography .left {
+  width: 25%;
+  padding: 20px 10px;
+}
+.kelash_tm_biography .title {
+  width: 100%;
+  float: left;
+  margin-bottom: 40px;
+}
+.kelash_tm_biography .title h3 {
+  font-size: 50px;
+  color: rgb(42, 168, 168);
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.kelash_tm_biography .title .mini {
+  display: block;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+.kelash_tm_biography .name {
+  font-weight: 800;
+  font-size: 40px;
+  color: var(--dark-color);
+  margin-bottom: 20px;
+  line-height: 50px;
+}
+.kelash_tm_biography .job {
+  font-weight: 600;
+  font-size: 20px;
+  color: var(--dark-color);
+}
+.kelash_tm_biography .right {
+  width: 75%;
+  padding-right: 340px;
+  padding-left: 70px;
+}
+.kelash_tm_biography .text {
+  width: 100%;
+  float: left;
+  margin-bottom: 44px;
+  
+}
+.kelash_tm_biography .text p {
+  margin-bottom: 10px;
+  font-size: 19px;
+}
+.kelash_tm_biography .text p:last-child {
+  margin-bottom: 30px;
+}
+.kelash_tm_biography .info {
+  width: 100%;
+  float: left;
+  padding-left: 20px;
+}
+.kelash_tm_biography .info ul {
+  margin: 0;
+}
+.kelash_tm_biography .info ul li {
+  margin: 0 20px 20px 0;
+  display: inline-block;
+  font-weight: 400;
+}
+.kelash_tm_biography .info ul li span {
+  display: block;
+}
+.kelash_tm_biography .info ul li span:first-child {
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+.kelash_tm_biography .info ul li span:last-child {
+  font-family: var(--font-inter);
+  font-weight: 700;
+  color: var(--dark-color);
+}
+.kelash_tm_biography .info ul li a {
+  color: var(--dark-color);
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.kelash_tm_biography .info ul li a:hover {
+  color: var(--yellow-color);
+}
+.about_skill_card {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.kelash_tm_experience {
+  width: 100%;
+  float: left;
+  background-color: #f3f9ff;
+  padding: 100px 0 70px;
+}
+.kelash_tm_experience .popup_image {
+  display: none;
+  opacity: 0;
+  position: absolute;
+  z-index: -11;
+}
+.kelash_tm_title {
+  width: 100%;
+  float: left;
+}
+.kelash_tm_title[data-position="center"] {
+  text-align: center;
+}
+.kelash_tm_title[data-position="right"] {
+  text-align: right;
+}
+.kelash_tm_title span {
+  width: 100%;
+  float: left;
+  font-weight: 500;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-bottom: 12px;
+}
+.kelash_tm_title h3 {
+  font-size: 40px;
+  font-weight: 800;
+}
+.kelash_tm_experience .list {
+  width: 100%;
+  float: left;
+  margin-top: 40px;
+}
+.kelash_tm_experience .list ul {
+  margin: 0 0 0 -30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.kelash_tm_experience .list ul li {
+  margin: 0 0 40px;
+  padding-left: 30px;
+  width: 50%;
+  float: left;
+}
+.kelash_tm_experience .list ul li .list_inner {
+  width: 100%;
+  clear: both;
+  float: left;
+  position: relative;
+  background-color: #fff;
+  border: 1px solid #f9fafc;
+  border-radius: 4px;
+  box-shadow: 30px 40px 80px #e4edf5;
+  padding: 45px 70px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.kelash_tm_experience .list ul li .list_inner:hover {
+  transform: translateY(-5px);
+}
+.kelash_tm_experience .short {
+  width: 100%;
+  float: left;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+.kelash_tm_experience .job span {
+  font-weight: 500;
+  display: inline-block;
+  margin-bottom: 4px;
+}
+.kelash_tm_experience .job h3 {
+  font-size: 20px;
+}
+.kelash_tm_experience .place span {
+  font-weight: 500;
+  font-family: var(--font-inter);
+}
+.kelash_tm_experience .text {
+  width: 100%;
+  float: left;
+}
+.kelash_tm_experience .text p {
+  opacity: 0.7;
+}
+
+.kelash_tm_counter h3 {
+  font-size: 40px;
+  margin-bottom: 7px;
+}
+.kelash_tm_counter span {
+  font-weight: 500;
+  font-family: var(--font-karla);
+  text-transform: uppercase;
+}
+
+.kelash_tm_button a {
+  width: 200px;
+  height: 50px;
+  background-color: #05154d;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  outline: none;
+  border: 1px solid #000;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: none;
+  letter-spacing: 0.9px;
+  margin: 0px 10px;
+}
+.kelash_tm_button a:hover {
+  background-color: #fff;
+  color: black;
+}
+
+
+
+.skill__time{
+    display: flex;
+    margin-bottom: 70px;
+    padding: 30px;
+    flex-wrap: wrap;
+}
+
+
+.kelash__experience {
+  width: 100%;
+  height: auto;
+  padding-bottom: 100px;
+  background-color: #cdf7fa;
+}
+.kelash__experience__container {
+  /* margin-top: 70px; */
+  width: 100%;
+  /* margin-left: 280px; */
+  /* margin-right: 200px; */
+}
+.kelash_info_experience {
+  width: 100%;
+  padding: 50px;
+}
+.kelash__experience__container__card {
+  /* width: 100%; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/* code css for all screen 
+all screen below 1050px then make all important div width 100% *
+and remove extra margin and padding where neccessary
+*/
+@media screen and (max-width: 1050px) {
+  .kelash_tm_about {
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+}
+.about_tm_main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+  }
+  .kelash_tm_biography {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .kelash_tm_biography .left {
+    width: 100%;
+    padding: 20px 10px;
+}
+
+.kelash_tm_biography .right {
+      padding: 20px 10px;
+  }
+    .kelash_tm_biography .text {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 30px;
+        margin-bottom: 44px;
+        text-wrap: wrap;
+    }
+   
+    .kelash_tm_biography .text p:last-child {
+        margin-bottom: 0;
+    }
+    .kelash_tm_biography .info {
+        float: left;
+        padding:0px  20px;
+    }
+   .skill__time{
+    display: flex;
+    padding: 0px 30px;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+   }
+}
+
+@media screen and (max-width:370px) {
+   .kelash_tm_about .about_tm_main{
+    margin: 0 0 0 0 ;
+    padding:  0;
+
+   }
+    .skill__time{
+        display: flex;
+        margin: 300px 0px;
+        padding: 0px 30px;
+        margin-bottom: 50px;
+        flex-wrap: wrap;
+    }
+}

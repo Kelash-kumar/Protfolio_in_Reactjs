@@ -1,0 +1,68 @@
+.kelash_tm_counter {
+    width: 25%;
+    /* float: left; */
+    /* margin-bottom: 90px; */
+}
+.kelash_tm_counter ul {
+    padding: 10px;
+    list-style: none;
+    /* margin: 0 0 0 -30px; */
+    margin: 5px;
+}
+.kelash_tm_counter ul li {
+    padding: 5px;
+    margin: 0 0 30px;
+    list-style: none;
+    /* float: left; */
+    /* width: 33.3333%; */
+    padding-left: 30px;
+}
+.kelash_tm_counter ul li .list_inner {
+    width: 100%;
+    float: left;
+    position: relative;
+    text-align: center;
+    padding: 60px 20px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+.kelash_tm_counter ul li .list_inner:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 3;
+    background: rgba(255, 255, 255, .5);
+    content: '';
+    -webkit-transition: -webkit-transform .6s;
+    transition: transform .6s;
+    -webkit-transform: scale3d(3.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, -100%, 0);
+    transform: scale3d(3.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, -100%, 0);
+}
+.kelash_tm_counter ul li .list_inner:hover:before {
+    -webkit-transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, 100%, 0);
+    transform: scale3d(3.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, 100%, 0);
+}
+.kelash_tm_counter ul li:nth-child(1) .list_inner {
+    background-color: #d3f4ec;
+    /* margin: 15px; */
+}
+
+
+/* css for screen below 1050px */
+@media screen and (max-width:1050px) {
+    .kelash_tm_counter{
+        width: auto;
+        margin: 0;
+        padding: 0;
+    }
+}
+@media screen and (max-width:665px) {
+    .kelash_tm_counter{
+        width: 100vw;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+

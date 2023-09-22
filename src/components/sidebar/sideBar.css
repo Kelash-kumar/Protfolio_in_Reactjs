@@ -1,5 +1,5 @@
 .kelash_tm_sidebar {
-    width: 300px;
+    width: 270px;
     height: 100vh;
     position: fixed;
     left: 0;
@@ -184,8 +184,8 @@
 }
 
 .kelash_tm_sidebar .text {
-    padding: 0 50px;
-    padding-bottom: 3px;
+    padding: 0 20px;
+    padding-bottom: 5px;
     color: rgb(92, 95, 97);
 }
 
