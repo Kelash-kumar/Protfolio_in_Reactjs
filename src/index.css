@@ -8,5 +8,6 @@ body {
     background-color: #fff;
     color: var(--main-color);
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 

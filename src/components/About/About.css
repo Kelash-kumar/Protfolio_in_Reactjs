@@ -57,8 +57,8 @@
 }
 .kelash_tm_biography .right {
   width: 75%;
-  padding-right: 340px;
-  padding-left: 70px;
+  padding-right: 400px;
+  padding-left: 40px;
 }
 .kelash_tm_biography .text {
   width: 100%;
@@ -257,7 +257,7 @@
   width: 100%;
   height: auto;
   padding-bottom: 100px;
-  background-color: #cdf7fa;
+  background-color: #ebffff;
 }
 .kelash__experience__container {
   /* margin-top: 70px; */
@@ -305,37 +305,68 @@ and remove extra margin and padding where neccessary
   }
   .kelash_tm_biography .left {
     width: 100%;
-    padding: 20px 10px;
+    padding: 10px 10px;
 }
 
 .kelash_tm_biography .right {
-      padding: 20px 10px;
+  width: 91%;
+      padding: 0px 10px;
+      /* background-color: #05154d; */
   }
     .kelash_tm_biography .text {
         display: flex;
         flex-direction: column;
         width: 100%;
-        padding: 30px;
-        margin-bottom: 44px;
+        padding-right: 0px;
+        padding: 20px;
+        margin-bottom: 60px;
         text-wrap: wrap;
     }
    
-    .kelash_tm_biography .text p:last-child {
-        margin-bottom: 0;
-    }
+   
     .kelash_tm_biography .info {
         float: left;
         padding:0px  20px;
+        
+    }
+    .kelash_tm_biography .info ul {
+        margin: 20px 0 0 0;
+        padding: 0;
     }
    .skill__time{
-    display: flex;
-    padding: 0px 30px;
     margin-bottom: 50px;
-    flex-wrap: wrap;
+    padding-bottom: 50px;
+    padding-right: 80px;
+   }
+   .kelash__experience__container__card{
+    background-color: #05154d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
    }
 }
+@media screen and (max-width: 550px) {
+ .text{
+  overflow-x: scroll;
+ }
+  .skill__time{
+  background-color: #05154d;
+  margin-top: 400px;
+ 
+}
+.info{
+  margin-bottom: 50px;
 
-@media screen and (max-width:370px) {
+}
+.info ul{
+  display: flex;
+  flex-direction: column;
+ }
+
+  
+}
+@media screen and (max-width:380px) {
    .kelash_tm_about .about_tm_main{
     margin: 0 0 0 0 ;
     padding:  0;

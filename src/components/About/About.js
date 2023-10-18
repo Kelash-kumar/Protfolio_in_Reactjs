@@ -1,16 +1,12 @@
 import React from "react";
 import "./About.css";
 import { useState } from "react";
-import "../About/Experience.css";
-import SkillComponent from "./SkillComponent";
-import Experience from "./ExperienceComponent";
-
+import SkillComponent from '../SubComponent/SkillComponent/SkillComponent';
+import Experience from '../SubComponent/ExCardComponent/ExperienceComponent.js';
+// import { ImCross } from "react-icons/im";
+// import { FaArrowRight } from "react-icons/fa";
 function About(props) {
-
-
   const [isContainerVisible, setContainerVisible] = useState(false);
-  // const [isScrollY, setScrollY] = useState('auto');// for scroll-y hidden when popup is open
-
   return (
     <div className="kelash_tm_about">
       <div className="about_tm_main">
@@ -83,32 +79,33 @@ function About(props) {
         </div>
 
         <div className="skill__time">
-          <SkillComponent 
+          <SkillComponent
             value={props.person.skillInformation.skill.skillTime}
             valueDesc={props.person.skillInformation.skill.skillTimeDesc}
             bgColor="#c3faf3"
           />
-          <SkillComponent 
+          <SkillComponent
             value={props.person.skillInformation.projects.projectCompelte}
-            valueDesc={props.person.skillInformation.projects.projectCompelteDesc}
+            valueDesc={
+              props.person.skillInformation.projects.projectCompelteDesc
+            }
             bgColor="#f9d4fc"
           />
-          <SkillComponent 
+          <SkillComponent
             value={props.person.skillInformation.companies.companyWork}
             valueDesc={props.person.skillInformation.companies.companyWorkDesc}
             bgColor="#d4fcdb"
-            />
-          
+          />
         </div>
 
         <div className="kelash__experience">
           <div className="kelash__experience__container">
             <div className="kelash_info_experience">
-              <h3>Experience</h3>
+              <h3 >Experience</h3>
               <h1>Every Thing About Me !</h1>
             </div>
             <div className="kelash__experience__container__card">
-              <Experience 
+              <Experience
                 experienceTime={props.Experience1.experienceTime}
                 companyName={props.Experience1.companyName}
                 jobTitle={props.Experience1.jobTitle}
@@ -116,15 +113,15 @@ function About(props) {
                 image={props.Experience1.image}
                 largeDesc={props.Experience1.largeDesc}
               />
-              <Experience 
+              <Experience
                 experienceTime={props.Experience2.experienceTime}
                 companyName={props.Experience2.companyName}
                 jobTitle={props.Experience2.jobTitle}
                 description={props.Experience2.description}
                 image={props.Experience2.image}
-                largeDesc={props.Experience2.largeDesc} 
+                largeDesc={props.Experience2.largeDesc}
               />
-              <Experience 
+              <Experience
                 experienceTime={props.Experience3.experienceTime}
                 companyName={props.Experience3.companyName}
                 jobTitle={props.Experience3.jobTitle}
@@ -132,7 +129,7 @@ function About(props) {
                 image={props.Experience3.image}
                 largeDesc={props.Experience3.largeDesc}
               />
-              <Experience 
+              <Experience
                 experienceTime={props.Experience4.experienceTime}
                 companyName={props.Experience4.companyName}
                 jobTitle={props.Experience4.jobTitle}
@@ -140,8 +137,6 @@ function About(props) {
                 image={props.Experience4.image}
                 largeDesc={props.Experience4.largeDesc}
               />
-
-        
             </div>
           </div>
         </div>

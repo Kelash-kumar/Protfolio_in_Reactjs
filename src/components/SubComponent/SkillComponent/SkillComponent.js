@@ -6,7 +6,7 @@ const SkillComponent = (props) => {
       <div class="kelash_tm_counter">
         <ul>
           <li>
-            <div class="list_inner"
+            <div class="list_inner shadow-xl"
               style={{
                 backgroundColor: props.bgColor,
               }}

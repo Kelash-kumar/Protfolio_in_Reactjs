@@ -8,7 +8,7 @@ import { BsFile } from "react-icons/bs";
 const SideBarData = [
     {
         title: "Home",
-        path: "/home",
+        path: "/",
         icon: <AiOutlineHome className="icon" />,
         className: "nav-text",
     },
@@ -20,20 +20,20 @@ const SideBarData = [
     },
     {
         title: "Services",
-        path: "#service",
+        path: "/services",
         icon: <AiTwotoneCustomerService className="icon" />,
         className: "nav-text",
     },
     {
         title: "Portfolio",
-        path: "#portfolio",
+        path: "/portfolio",
         icon: <BsFile className="icon" />,
         className: "nav-text",
     },
    
     {
         title: "Contact",
-        path: "#contact",
+        path: "/contact",
         icon: <BiSolidContact className="icon" />,
         className: "nav-text",
     },

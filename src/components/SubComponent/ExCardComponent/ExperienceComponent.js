@@ -9,9 +9,11 @@ const Experience = (props) => {
 
   return (
     <>
-      <div className="kelash__experience__card">
+      <div className="kelash__experience__card"
+     
+      >
         <div
-          className="card__container"
+          className="card__container shadow-2xl"
           onClick={() => {
             setContainerVisible(true);
           }}
@@ -28,6 +30,13 @@ const Experience = (props) => {
           <p className="card__container__p">
             {props.description}
           </p>
+          <p
+          style={{
+            textDecoration:'underLine',
+            fontWeight:'300',
+            cursor:'pointer'
+          }}
+          >{props.readMore}  </p>
         </div>
       </div>
 

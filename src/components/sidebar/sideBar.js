@@ -1,17 +1,22 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./sideBar.css";
 import "./mobileSideBar.css";
-// link
-// import { Link } from "react-router-dom";
-import { BiLogoFacebook, BiLogoLinkedin, BiLogoTwitter } from "react-icons/bi";
 import MobileSideBar from "./MobileSideBar";
 import SideBarData from "./MobileSideData";
+import { BiLogoFacebook, BiLogoGithub, BiLogoLinkedin } from "react-icons/bi";
+import { motion } from "framer-motion";
 
 const SideBar = () => {
   return (
     <>
       <MobileSideBar />
-      <div className="kelash_tm_sidebar">
+      <motion.div
+        initial={{ x: -100, opacity: 0 }}
+        animate={{ x: 0, opacity: 1 }}
+        transition={{ delay: 0.2, duration: 0.5 }}
+        className="kelash_tm_sidebar"
+      >
         <div className="sidebar_inner">
           {/* Sidebar content here */}
           <div className="author">
@@ -24,7 +29,7 @@ const SideBar = () => {
             </div>
             <div className="name">
               <h3>
-                <span> 
+                <span>
                   kelash<span className="back"> kelash</span>
                 </span>
               </h3>
@@ -33,10 +38,11 @@ const SideBar = () => {
 
           <div className="menu scrollable">
             <ul className="transition_link">
+           
               {SideBarData.map((item, index) => (
                 <li key={index} className={item.className}>
-                  <a to={item.path}>
-                    <span>{item.title}</span>
+                  <a href={item.path} >
+                    <span className="link_text">{item.title}</span>
                   </a>
                 </li>
               ))}
@@ -46,32 +52,28 @@ const SideBar = () => {
           <div className="copyright">
             <div className="social">
               <ul>
-                {/*facebook  */}
-
-                {/* <li><a href="/"><i class="icon-facebook-1"></i></a></li> */}
                 <li>
-                  <a href="/">
+                  <a href="https://www.facebook.com/kelashkumar.raisal/">
                     <i>
                       <BiLogoFacebook className="icon" />
                     </i>
                   </a>
                 </li>
                 <li>
-                  <a href="/">
+                  <a href="https://www.linkedin.com/in/kelash-kumar-47245a255/">
                     <i>
                       <BiLogoLinkedin className="icon" />
                     </i>
                   </a>
                 </li>
                 <li>
-                  <a href="/">
+                  <a href="https://github.com/Kelash-kumar">
                     <i>
-                      <BiLogoTwitter className="icon" />
+                      <BiLogoGithub className="icon" />
                     </i>
                   </a>
                 </li>
-                {/* <li><a href="/"><i class="icon-twitter-1"></i></a></li> */}
-                {/* <li><a href="/"><i class="icon-linkedin-1"></i></a></li> */}
+ 
               </ul>
             </div>
             <div className="text">
@@ -79,7 +81,7 @@ const SideBar = () => {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </>
   );
 };

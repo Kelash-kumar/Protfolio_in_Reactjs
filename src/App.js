@@ -1,9 +1,25 @@
 import React from 'react';
-// import {BrowserRouter as Router, Routes,Route } from 'react-router-dom';
+// import ReactDOM from 'react-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
 import SideBar from './components/sidebar/sideBar.js';
 import Home from './components/Home/Home';
 import About from './components/About/About';
+import Services from './components/Services/Services';
+import Protfolio from './components/Protfolio/protfolio'; 
+import { AiOutlineArrowRight } from "react-icons/ai";
+// import { FaArrowRight } from "react-icons/fa";
+import Contact from './components/Contact/Contact';
+
+
+
+
+
+
+
+
+
+
 function App() {
 
 
@@ -57,6 +73,8 @@ const person={
     experienceTime:"2021-present",
     companyName:"kelash,umerkot",
     jobTitle:"web Developer",
+    readMore:`Read More`,
+    readMoreIcon:<AiOutlineArrowRight/>,
     description:"Voluptatem expedita rem unde inventore laudantium. Ipsum vero a ab deserunt eius.",
     image:"https://images.unsplash.com/photo-1588702547923-7093a6c3ba33?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8bGFwdG9wfGVufDB8fDB8fHww&auto=format&fit=crop&w=400&q=60",
     largeDesc:"Nostrum voluptatum minus sint ut magni quasi, eveniet quibusdam eos cupiditate numquam explicabo amet labore vel mollitia, natus non rerum voluptatem harum commodi vel excepturi maxime impedit, sit beatae? Consectetur, esse id. Incidunt quos saepe quidem cum, mollitia autem explicabo, dolore amet, voluptatem consequuntur ipsam dolorum commodi hic. Id porro aperiam ducimus saepe, nesciunt a est aut quos cumque omnis, illum labore quia vel maxime, non ullam repellat vero animi pariatur nobis nam rerum? Ut iusto et ex repellat! Provident distinctio facere esse"
@@ -98,15 +116,57 @@ const person={
   return (
   <>
 <SideBar/>
+<BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={
+          <About 
+          person={person}
+           Experience1={Experience1}
+           Experience2={Experience2}
+           Experience3={Experience3}
+           Experience4={Experience4}
+          
+         /> 
+        }/>
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/services" element={
+          <Services
+          Experience1={Experience1}
+         />
+        } />
+      
+        <Route path="/portfolio" element={<Protfolio />} />
+        <Route path="*" element={<h1
+        style={{
+          position:'absolute',
+          top:'0',
+          left:'0',
+          display:'flex',
+          justifyContent:'center',
+          alignItems:'center',
+          width:'100%',
+          height:'100vh',
+          fontSize:'10rem',
+          color:'#fff',
+          background:'#000',
+        
+        }}
+        >404 Not Found</h1>} />
+      </Routes>
+    </BrowserRouter>
+
  {/* <Home/>  */}
-<About 
+{/* <About 
  person={person}
   Experience1={Experience1}
   Experience2={Experience2}
   Experience3={Experience3}
   Experience4={Experience4}
  
-/>
+/> */}
+
+{/* <Contact/> */}
   </>
   );
 

@@ -3,35 +3,42 @@
     padding: 0;
 }
 .navbar{
-    background-color: #fff;
+    background-color: #a8ebeba2;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: 100vw;
     padding: 20px;
+
+
     
 }
 
-
 .side-menu{
     position: fixed;
-    width: 200px;
+    width:180px;
     height: 100vh;
-    display: flex;
-    transition: 850ms;
-    background-color: #fff; 
-    
     top: 0;
     right: -200px;
-    transition: right 2s ease-in-out; /* Smooth transition */
-  
-    
+    z-index: 999;
+    display: flex;
+    background-color: #fff;
+    flex-direction: column;
+    justify-content: center;
+    border-left: 1px solid rgb(235, 233, 233,0.2);
+    opacity: 0;
+    transition: 850ms;
+    transition: right 5s ease-in-out, opacity 5s ease-in-out; /* Very slow slide-in transition */
+
 }
 .side-menu.active{
     right: 0;
     transition: 350ms;
+    opacity: 1; 
+    animation: slideIn 5s ease-in-out forwards, fadeIn 2s ease-in-out forwards;
 
+    
 }
 .nav-menu{
     display: flex;
@@ -41,6 +48,7 @@
     list-style: none;
     padding: 0;
     margin: 0;
+
     width: 100%;
     
 }
@@ -49,6 +57,11 @@
     right: 23px;
     position: fixed;
    font-size: 3rem;
+   color: #e9e7e7;
+}
+
+.menu-item-cross:hover{
+    color: #c9c5c5;
 }
 .menu-bar-toggle{
     font-size: 2rem;
@@ -62,26 +75,27 @@
     padding: 0px 12px;
 }
 .nav-text a:hover{
-    background-color: rgb(204, 203, 209);    
+    background-color: rgb(249, 249, 252,0.6);    
     border-radius: 4px;
     transition: 350ms;
+    
 }
 .nav-text a{
     display: flex;
     justify-content: start;
     list-style: none;
     text-decoration: none;
-    /* color: #fff; */
     color: black;
-    padding: 0 16px;
+    padding: 5px 5px;
     border-radius: 4px;
+    margin-bottom: 25px;
 }
 
 .text{
     margin-top: 10px;
-   padding: 10px 17px;
+    padding: 10px 50px;
     font-size: 1rem;
-    font-weight: 200;
+    font-weight: 300;
 }
 
 /* hide on large screen */

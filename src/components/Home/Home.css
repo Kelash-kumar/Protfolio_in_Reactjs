@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+
 .home{
     width: 100vw;
     height: 100%;
@@ -9,7 +11,8 @@
     padding: 12px;
     display: flex;
     margin-left: 270px;
-    background-color: #ccf8f6;
+    /* background-color: #effbf8; */
+    background-color: #beece1;
         /* background-color: blue; */
     /* justify-content: space-between; */
 }
@@ -43,7 +46,7 @@
 .main__content_button ,button{
     width: 200px;
     height: 50px;
-    background-color: #05154d;
+    background-color: #130f49;
     color: #fff;
     border: none;
    padding: 10px;
@@ -55,8 +58,18 @@
     font-weight: 500;
     margin: 0px 10px;  
 }
+
+ .main__content_button ,button:last-child{
+    background-color: #beece1;
+    color: #000;
+}
+
+ .main__content_button ,button:last-child:hover{
+    background-color: #130f49;
+    color: #fff;
+}
 .main__content_button ,button:hover{
-    background-color: #ccf8f6;
+    background-color:#beece1;
         color: black;
 }
 .main__content__text{
@@ -65,7 +78,7 @@
     font-weight: 400;
 }
 .main__content__text  span{
-    color: #2882e9;
+    color: #a5a6ff;
 
 }
 .main__content__contact{
@@ -82,71 +95,139 @@
   
 }
 .main__img{
-    width: 400px;
-    height: 400px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 500px;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(236, 41, 204);
-    margin-right: 100px;
-    background-image: url('/src/assets/img/about/22.png');
-    /* background-image: url('https://media.istockphoto.com/id/1252851787/photo/hi-portrait-of-friendly-smiling-handsome-man-in-worker-denim-shirt-raising-hand-welcoming.jpg?s=612x612&w=0&k=20&c=i5fYXrLokewtSN2Hyz_m0lGKY1qZF5xOr7PzrF9-EDQ='); */
+    background-image: url('/src/assets/img/about/222.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    border-radius: 73% 27% 67% 33% / 45% 30% 70% 55% ;
+    transition: 1s ;
+
 }
-/* css for all screen */
-@media screen and (max-width: 1050px){
+
+/* screen less than 460px */
+@media (max-width: 460px) {
     .home_main{
-        
-        margin-left: 0px;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        width: 100vw;
+        height: 100vh;
+        /* padding: 0px 50px; */
     }
     .main__content{
         width: 100%;
         height: 100%;
-        /* padding: 10px; */
-        /* margin-top: 20px; */
+
     }
-    .main__content h1{
-        font-size: 43px;
-    }
-    .main__content__text_p{
-        font-size: 22px;
+
+    .main__content_button, button {
+        width: 84vw;
+        margin: 10px 10px;
+        font-size: 18px;
     }
     .main__content__text{
-        font-size: 20px;
+        height: 400px;
+        margin: 0;
+        padding: 10px 20px;
+        /* background:#20a7d8; */
     }
-    .main__img{
-        width: 140vw;
-        height: 60vh;
-        border-radius: 0px;
-        margin-right: 0px;
-        margin-top: -12px;
-        padding-top: 30px;
-    }
-    .main__content__contact{
-        margin-top: 50px;
-    }
-    .main__content__contact p{
-        font-size: 20px;
-    }
-    .main__content_button ,button{
-        width: 170px;
-        height: 40px;
+    .main__content__text p{
         font-size: 18px;
-        font-weight: 500;
-        margin-bottom: 10px;
+    }
+    .main__content h1{
+        margin: 20px 0px;
+        font-size: 3rem;
+    }
+    .animation{
+        height: 40px;
+        margin-top: 1.5rem;
     }
 }
-/* for screen large then 1050 image shift to right side */
-@media screen and (min-width: 1050px){
+
+/* screen less 359px */
+@media (max-width: 359px) {
+    
+
+    .main__content_button, button {
+        width: 84vw;
+        margin: 10px 10px;
+        font-size: 18px;
+    }
+   
+    .main__content__text p{
+        font-size: 18px;
+    }
+    .main__content h1{
+        margin: 20px 0px;
+        font-size: 2rem;
+    }
+    .animation{
+        height: 40px;
+        margin-top: 1.5rem;
+    }
+}
+
+.animation {
+    /* background-color: #130f49; */
+    height:60px;
+    overflow:hidden;
+    margin-top: 1rem;
+    font-family:'Roboto';
+    font-size: 50px;
+    font-weight: 700;
+  }
+  
+  .animation > div > div {
+    padding: 0.5rem 0.75rem;
+    height:2.81rem;
+    margin-bottom: 2.81rem;
+    display:inline-block;
+  }
+  
+  .animation div:first-child {
+    animation: text-animation 8s infinite;
+  }
+  
+  .first div {
+    color:#20a7d8;
+  }
+  .second div {
+    color:#CD921E;
+  }
+  .third div {
+    color:#c10528;
+  }
+  
+  @keyframes text-animation {
+    0% {margin-top: 0;}
+    10% {margin-top: 0;}
+    20% {margin-top: -5.62rem;}
+    30% {margin-top: -5.62rem;}
+    40% {margin-top: -11.24rem;}
+    60% {margin-top: -11.24rem;}
+    70% {margin-top: -5.62rem;}
+    80% {margin-top: -5.62rem;}
+    90% {margin-top: 0;}
+    100% {margin-top: 0;}
+  }
+  /* media query for screen less than 1050px */
+@media (max-width: 1050px) {
+    .home_main{
+        width: 100vw;
+        height: 100vh;
+        margin-left: 0px;
+    }
+    .main__content{
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+    }
     .main__img{
-        position: absolute;
-        right: -30px;
-        top: 40px;
+        
+        display: none;
     }
 }
